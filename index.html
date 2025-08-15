@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba Factory IO</title>
+    <link rel="icon" type="image/png" href="Factory IO.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="loader" class="loader">
+      <div class="loader-logo">
+        <img src="Factory IO.ico" alt="Logo Factory IO" class="ball" />
+        <p>Factory IO</p>
+      </div>
+    </div>
+
+    <div class="tanque" id="tanque"></div>
+    <div class="container-displays">
+      <div class="container-displays-label">
+        <p>SP (cm)</p>
+        <div class="display"><span id="display-sp">000</span></div>
+      </div>
+      <div class="container-displays-label">
+        <p>PV (cm)</p>
+        <div class="display"><span id="display-pv">000</span></div>
+      </div>
+      <div class="container-displays-label">
+        <p>CV (%)</p>
+        <div class="display"><span id="display-cv">000</span></div>
+      </div>
+    </div>
+    <div class="container-control">
+      <div class="botones">
+        <button class="boton marcha" id="btn-marcha"></button>
+        <button class="boton parada" id="btn-parada"></button>
+      </div>
+      <input
+        class="potenciometro"
+        id="potenciometro"
+        type="range"
+        min="0"
+        max="300"
+        value="0"
+        step="1" />
+    </div>
+  </body>
+</html>
